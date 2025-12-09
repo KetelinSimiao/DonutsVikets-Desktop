@@ -31,5 +31,11 @@ namespace DonutsVikets.UI
         {
 
         }
+
+        private void BTNfECHAR_Click(object sender, EventArgs e)
+        {
+            Close();
+
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -44,6 +45,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             pictureBox1 = new PictureBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -59,6 +61,8 @@
             btnExcluir = new Guna.UI2.WinForms.Guna2Button();
             btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
             cboCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
+            btnFechar = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -275,7 +279,7 @@
             // 
             // cboCategoria
             // 
-            cboCategoria.BackColor = Color.IndianRed;
+            cboCategoria.BackColor = Color.FromArgb(255, 188, 217);
             cboCategoria.BorderColor = Color.Transparent;
             cboCategoria.BorderRadius = 20;
             cboCategoria.CustomizableEdges = customizableEdges15;
@@ -284,7 +288,7 @@
             cboCategoria.FocusedColor = Color.FromArgb(94, 148, 255);
             cboCategoria.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             cboCategoria.Font = new Font("Segoe UI", 10F);
-            cboCategoria.ForeColor = Color.FromArgb(68, 88, 112);
+            cboCategoria.ForeColor = Color.FromArgb(255, 188, 217);
             cboCategoria.ItemHeight = 30;
             cboCategoria.Location = new Point(183, 333);
             cboCategoria.Name = "cboCategoria";
@@ -292,11 +296,38 @@
             cboCategoria.Size = new Size(189, 36);
             cboCategoria.TabIndex = 5;
             // 
+            // guna2BorderlessForm1
+            // 
+            guna2BorderlessForm1.BorderRadius = 20;
+            guna2BorderlessForm1.ContainerControl = this;
+            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // btnFechar
+            // 
+            btnFechar.BackColor = Color.FromArgb(255, 188, 217);
+            btnFechar.DisabledState.BorderColor = Color.DarkGray;
+            btnFechar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnFechar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnFechar.FillColor = Color.Red;
+            btnFechar.Font = new Font("Segoe UI", 9F);
+            btnFechar.ForeColor = Color.White;
+            btnFechar.Location = new Point(742, 12);
+            btnFechar.Name = "btnFechar";
+            btnFechar.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            btnFechar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            btnFechar.Size = new Size(46, 34);
+            btnFechar.TabIndex = 6;
+            btnFechar.Text = "guna2CircleButton1";
+            btnFechar.Click += btnFechar_Click;
+            // 
             // frmProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnFechar);
             Controls.Add(cboCategoria);
             Controls.Add(btnExcluir);
             Controls.Add(btnCadastrar);
@@ -312,6 +343,7 @@
             Controls.Add(guna2Button1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frmProduto";
             Text = "frmProduto";
             Load += frmProduto_Load;
@@ -338,5 +370,7 @@
         private Guna.UI2.WinForms.Guna2Button btnExcluir;
         private Guna.UI2.WinForms.Guna2Button btnCadastrar;
         private Guna.UI2.WinForms.Guna2ComboBox cboCategoria;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2CircleButton btnFechar;
     }
 }

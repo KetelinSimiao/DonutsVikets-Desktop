@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
@@ -39,6 +40,7 @@
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgPedidos).BeginInit();
             SuspendLayout();
@@ -48,14 +50,14 @@
             pictureBox1.Image = Properties.Resources.Pink_Aesthetic_Linktree_Background__4_;
             pictureBox1.Location = new Point(-4, -2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(817, 459);
+            pictureBox1.Size = new Size(1226, 504);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // txtDataPedido
             // 
-            txtDataPedido.Location = new Point(515, 47);
+            txtDataPedido.Location = new Point(740, 73);
             txtDataPedido.Name = "txtDataPedido";
             txtDataPedido.Size = new Size(200, 23);
             txtDataPedido.TabIndex = 1;
@@ -86,7 +88,7 @@
             dgPedidos.Location = new Point(10, 61);
             dgPedidos.Name = "dgPedidos";
             dgPedidos.RowHeadersVisible = false;
-            dgPedidos.Size = new Size(411, 301);
+            dgPedidos.Size = new Size(691, 412);
             dgPedidos.TabIndex = 2;
             dgPedidos.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgPedidos.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -116,7 +118,7 @@
             // 
             guna2HtmlLabel1.BackColor = Color.FromArgb(255, 188, 217);
             guna2HtmlLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel1.Location = new Point(516, 18);
+            guna2HtmlLabel1.Location = new Point(740, 33);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(83, 23);
             guna2HtmlLabel1.TabIndex = 3;
@@ -124,6 +126,8 @@
             // 
             // txtStatus
             // 
+            txtStatus.BackColor = Color.FromArgb(255, 188, 217);
+            txtStatus.BorderRadius = 20;
             txtStatus.CustomizableEdges = customizableEdges1;
             txtStatus.DefaultText = "";
             txtStatus.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -133,7 +137,7 @@
             txtStatus.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtStatus.Font = new Font("Segoe UI", 9F);
             txtStatus.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtStatus.Location = new Point(515, 132);
+            txtStatus.Location = new Point(740, 131);
             txtStatus.Name = "txtStatus";
             txtStatus.PlaceholderText = "";
             txtStatus.SelectedText = "";
@@ -145,23 +149,31 @@
             // 
             guna2HtmlLabel2.BackColor = Color.FromArgb(255, 188, 217);
             guna2HtmlLabel2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel2.Location = new Point(516, 103);
+            guna2HtmlLabel2.Location = new Point(737, 102);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(53, 23);
             guna2HtmlLabel2.TabIndex = 3;
             guna2HtmlLabel2.Text = "Status :";
             // 
+            // guna2BorderlessForm1
+            // 
+            guna2BorderlessForm1.BorderRadius = 20;
+            guna2BorderlessForm1.ContainerControl = this;
+            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
             // frmPedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1091, 485);
             Controls.Add(txtStatus);
             Controls.Add(guna2HtmlLabel2);
             Controls.Add(guna2HtmlLabel1);
             Controls.Add(dgPedidos);
             Controls.Add(txtDataPedido);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frmPedidos";
             Text = "frmPedidos";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -178,5 +190,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txtStatus;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }

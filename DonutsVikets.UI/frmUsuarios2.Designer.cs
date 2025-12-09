@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuarios2));
+            components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            pictureBox1 = new PictureBox();
             txtNome1 = new TextBox();
             txtEmail1 = new TextBox();
             txtSenha1 = new TextBox();
@@ -44,22 +43,14 @@
             txtSenha = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
             cmbTipoUsuario = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(671, 489);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
-            // 
             // txtNome1
             // 
-            txtNome1.Location = new Point(12, 89);
+            txtNome1.Location = new Point(44, 89);
             txtNome1.Name = "txtNome1";
             txtNome1.Size = new Size(179, 23);
             txtNome1.TabIndex = 7;
@@ -67,14 +58,14 @@
             // 
             // txtEmail1
             // 
-            txtEmail1.Location = new Point(12, 189);
+            txtEmail1.Location = new Point(44, 189);
             txtEmail1.Name = "txtEmail1";
             txtEmail1.Size = new Size(179, 23);
             txtEmail1.TabIndex = 8;
             // 
             // txtSenha1
             // 
-            txtSenha1.Location = new Point(12, 283);
+            txtSenha1.Location = new Point(39, 283);
             txtSenha1.Name = "txtSenha1";
             txtSenha1.ScrollBars = ScrollBars.Horizontal;
             txtSenha1.Size = new Size(179, 23);
@@ -92,7 +83,7 @@
             btnFechar.FillColor = Color.Red;
             btnFechar.Font = new Font("Segoe UI", 9F);
             btnFechar.ForeColor = Color.White;
-            btnFechar.Location = new Point(616, 12);
+            btnFechar.Location = new Point(641, 12);
             btnFechar.Name = "btnFechar";
             btnFechar.ShadowDecoration.CustomizableEdges = customizableEdges1;
             btnFechar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -104,7 +95,7 @@
             // 
             txtNome.BackColor = Color.FromArgb(250, 181, 211);
             txtNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNome.Location = new Point(12, 60);
+            txtNome.Location = new Point(44, 60);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(46, 23);
             txtNome.TabIndex = 12;
@@ -114,7 +105,7 @@
             // 
             txtEmail.BackColor = Color.FromArgb(250, 181, 211);
             txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtEmail.Location = new Point(12, 160);
+            txtEmail.Location = new Point(44, 160);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(41, 23);
             txtEmail.TabIndex = 12;
@@ -124,7 +115,7 @@
             // 
             txtSenha.BackColor = Color.FromArgb(250, 181, 211);
             txtSenha.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtSenha.Location = new Point(25, 254);
+            txtSenha.Location = new Point(39, 254);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(46, 23);
             txtSenha.TabIndex = 12;
@@ -139,10 +130,10 @@
             btnCadastrar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnCadastrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnCadastrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnCadastrar.FillColor = Color.Salmon;
+            btnCadastrar.FillColor = Color.Aquamarine;
             btnCadastrar.Font = new Font("Segoe UI", 9F);
             btnCadastrar.ForeColor = Color.White;
-            btnCadastrar.Location = new Point(12, 415);
+            btnCadastrar.Location = new Point(29, 415);
             btnCadastrar.Name = "btnCadastrar";
             btnCadastrar.ShadowDecoration.CustomizableEdges = customizableEdges3;
             btnCadastrar.Size = new Size(180, 45);
@@ -161,17 +152,34 @@
             cmbTipoUsuario.Font = new Font("Segoe UI", 10F);
             cmbTipoUsuario.ForeColor = Color.FromArgb(68, 88, 112);
             cmbTipoUsuario.ItemHeight = 30;
-            cmbTipoUsuario.Location = new Point(12, 338);
+            cmbTipoUsuario.Location = new Point(38, 352);
             cmbTipoUsuario.Name = "cmbTipoUsuario";
             cmbTipoUsuario.ShadowDecoration.CustomizableEdges = customizableEdges5;
             cmbTipoUsuario.Size = new Size(180, 36);
             cmbTipoUsuario.TabIndex = 14;
             // 
+            // guna2BorderlessForm1
+            // 
+            guna2BorderlessForm1.BorderRadius = 20;
+            guna2BorderlessForm1.ContainerControl = this;
+            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Pink_Aesthetic_Linktree_Background__2_;
+            pictureBox1.Location = new Point(-253, -7);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1178, 495);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
+            // 
             // frmUsuarios2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(666, 472);
+            ClientSize = new Size(702, 472);
             Controls.Add(cmbTipoUsuario);
             Controls.Add(btnCadastrar);
             Controls.Add(txtSenha);
@@ -182,6 +190,7 @@
             Controls.Add(txtEmail1);
             Controls.Add(txtNome1);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frmUsuarios2";
             Text = "frmUsuarios2";
             Load += frmUsuarios2_Load;
@@ -195,7 +204,6 @@
         private Button btnExcluir;
         private Button btnEditar;
         private Button btnAtualizar;
-        private PictureBox pictureBox1;
         private TextBox txtNome1;
         private TextBox txtEmail1;
         private TextBox txtSenha1;
@@ -205,5 +213,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel txtSenha;
         private Guna.UI2.WinForms.Guna2Button btnCadastrar;
         private Guna.UI2.WinForms.Guna2ComboBox cmbTipoUsuario;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private PictureBox pictureBox1;
     }
 }

@@ -66,6 +66,11 @@ namespace DonutsVikets.UI
             cboCategoria.SelectedIndex = -1;
             cboCategoria.Text = "Selecione o tipo";
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 
 }

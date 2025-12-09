@@ -83,6 +83,16 @@ namespace DonutsVikets.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Pink_Aesthetic_Linktree_Background__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Pink Aesthetic Linktree Background (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Pink_Aesthetic_Linktree_Background__3_ {
             get {
                 object obj = ResourceManager.GetObject("Pink Aesthetic Linktree Background (3)", resourceCulture);
