@@ -93,7 +93,7 @@
             // 
             guna2HtmlLabel1.BackColor = Color.FromArgb(250, 181, 211);
             guna2HtmlLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel1.Location = new Point(8, 305);
+            guna2HtmlLabel1.Location = new Point(183, 304);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(70, 23);
             guna2HtmlLabel1.TabIndex = 2;
@@ -115,7 +115,7 @@
             // 
             guna2HtmlLabel2.BackColor = Color.FromArgb(250, 181, 211);
             guna2HtmlLabel2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel2.Location = new Point(12, 43);
+            guna2HtmlLabel2.Location = new Point(187, 42);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(46, 23);
             guna2HtmlLabel2.TabIndex = 2;
@@ -125,7 +125,7 @@
             // 
             guna2HtmlLabel3.BackColor = Color.FromArgb(250, 181, 211);
             guna2HtmlLabel3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel3.Location = new Point(8, 127);
+            guna2HtmlLabel3.Location = new Point(183, 126);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(70, 23);
             guna2HtmlLabel3.TabIndex = 2;
@@ -135,7 +135,7 @@
             // 
             guna2HtmlLabel4.BackColor = Color.FromArgb(250, 181, 211);
             guna2HtmlLabel4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel4.Location = new Point(8, 227);
+            guna2HtmlLabel4.Location = new Point(183, 226);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(42, 23);
             guna2HtmlLabel4.TabIndex = 2;
@@ -163,7 +163,7 @@
             txtNome.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNome.Font = new Font("Segoe UI", 9F);
             txtNome.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtNome.Location = new Point(8, 77);
+            txtNome.Location = new Point(183, 76);
             txtNome.Name = "txtNome";
             txtNome.PlaceholderText = "";
             txtNome.SelectedText = "";
@@ -184,7 +184,7 @@
             txtDescricao.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDescricao.Font = new Font("Segoe UI", 9F);
             txtDescricao.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDescricao.Location = new Point(8, 172);
+            txtDescricao.Location = new Point(183, 171);
             txtDescricao.Name = "txtDescricao";
             txtDescricao.PlaceholderText = "";
             txtDescricao.SelectedText = "";
@@ -205,7 +205,7 @@
             txtPreco.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPreco.Font = new Font("Segoe UI", 9F);
             txtPreco.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPreco.Location = new Point(8, 250);
+            txtPreco.Location = new Point(183, 249);
             txtPreco.Name = "txtPreco";
             txtPreco.PlaceholderText = "";
             txtPreco.SelectedText = "";
@@ -286,7 +286,7 @@
             cboCategoria.Font = new Font("Segoe UI", 10F);
             cboCategoria.ForeColor = Color.FromArgb(68, 88, 112);
             cboCategoria.ItemHeight = 30;
-            cboCategoria.Location = new Point(8, 334);
+            cboCategoria.Location = new Point(183, 333);
             cboCategoria.Name = "cboCategoria";
             cboCategoria.ShadowDecoration.CustomizableEdges = customizableEdges16;
             cboCategoria.Size = new Size(189, 36);
